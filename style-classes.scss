@@ -25,6 +25,11 @@
       font-size: 3em;
       // border-bottom: 5px solid #08afaa;
       // line-height: 2.5rem;
+      @include mixins.from($tablet) {
+        font-size: 4em;
+        // border-bottom: 9px solid #08afaa;
+        // line-height: 5.5rem;
+      }
       @include mixins.from($desktop) {
         font-size: 7em;
         // border-bottom: 9px solid #08afaa;

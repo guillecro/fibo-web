@@ -24381,6 +24381,11 @@ has-background-danger.is-hoverable:active {
 #home .level .number {
   font-size: 3em;
 }
+@media screen and (min-width: 769px) {
+  #home .level .number {
+    font-size: 4em;
+  }
+}
 @media screen and (min-width: 1024px) {
   #home .level .number {
     font-size: 7em;
