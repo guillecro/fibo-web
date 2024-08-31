@@ -24,4 +24,18 @@ $(document).ready(function() {
 
     });
   });
+
+  // Make a function that when I click a section link, the site scrolls to that section
+  $(".navbar-item").click(function() {
+    var section = $(this).attr("href");
+    $("html, body").animate({
+      scrollTop: $(section).offset().top - ($(".navbar").height() + 20)
+    }, 1000);
+  });
+  $(".navbar-link").click(function() {
+    var section = $(this).attr("href");
+    $("html, body").animate({
+      scrollTop: $(section).offset().top - ($(".navbar").height() + 20)
+    }, 1000);
+  });
 });

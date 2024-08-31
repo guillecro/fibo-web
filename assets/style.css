@@ -24391,5 +24391,19 @@ has-background-danger.is-hoverable:active {
     font-size: 7em;
   }
 }
+#home #proposito-hero {
+  background: url("/assets/img/01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#home #iniciativas-hero {
+  background: url("/assets/img/02.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 
 /*# sourceMappingURL=style.css.map */

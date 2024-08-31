@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html data-theme="light">
+<html data-theme="light" class="has-navbar-fixed-top">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FIBO - Descubre Nuestro Impacto</title>
-    <meta name="title" content="Descubre Nuestro Impacto: regeneración, respeto y cuidado de la sociobiodiversidad" />
+    <title>FIBO - Regeneración, respeto y cuidado de la sociobiodiversidad</title>
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Descubre Nuestro Impacto: Regeneración, respeto y cuidado de la sociobiodiversidad" />
     <meta name="description" content="FIBO es una organización sin fines de lucro del sur global que impulsa soluciones centradas en la regeneración, el respeto y el cuidado de la sociobiodiversidad junto a organizaciones territoriales y comunidades locales con el propósito de potenciar y escalar la inclusión económica, social, cultural y ambiental" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fibo.lat/" />
+    <meta property="og:title" content="Descubre Nuestro Impacto: Regeneración, respeto y cuidado de la sociobiodiversidad" />
+    <meta property="og:description" content="FIBO es una organización sin fines de lucro del sur global que impulsa soluciones centradas en la regeneración, el respeto y el cuidado de la sociobiodiversidad junto a organizaciones territoriales y comunidades locales con el propósito de potenciar y escalar la inclusión económica, social, cultural y ambiental" />
+    <meta property="og:image" content="https://fibo.lat/sharer.jpg" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://fibo.lat/" />
+    <meta property="twitter:title" content="Descubre Nuestro Impacto: Regeneración, respeto y cuidado de la sociobiodiversidad" />
+    <meta property="twitter:description" content="FIBO es una organización sin fines de lucro del sur global que impulsa soluciones centradas en la regeneración, el respeto y el cuidado de la sociobiodiversidad junto a organizaciones territoriales y comunidades locales con el propósito de potenciar y escalar la inclusión económica, social, cultural y ambiental" />
+    <meta property="twitter:image" content="https://fibo.lat/sharer.jpg" />
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/assets/isologo.png">
     <link rel="stylesheet" href="/assets/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <nav class="navbar" role="navigation" aria-label="dropdown navigation">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="dropdown navigation">
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item">
@@ -27,37 +43,33 @@
       
         <div id="theNavbar" class="navbar-menu">
           <div class="navbar-end">
-            <!-- <div class="navbar-item has-dropdown">
-              <a class="navbar-link">
-                Inicio
-              </a>
-              <div class="navbar-dropdown">
-                <a class="navbar-item">
-                  Overview
-                </a>
-                <a class="navbar-item">
-                  Elements
-                </a>
-                <a class="navbar-item">
-                  Components
-                </a>
-                <hr class="navbar-divider">
-                <div class="navbar-item">
-                  Version 1.0.2
-                </div>
-              </div>
-            </div> -->
-            <a href="/" class="navbar-item">
+            <a href="#home" class="navbar-item">
               Inicio
             </a>
-            <a href="/quienes-somos" class="navbar-item">
-              ¿Quienes somos?
+            <div class="navbar-item has-dropdown">
+              <a href="#quienes-somos" class="navbar-link">
+                ¿Quienes somos?
+              </a>
+              <div class="navbar-dropdown">
+                <a href="#que-hacemos" class="navbar-item">
+                  ¿Qué hacemos?
+                </a>
+                <a id="#equipo" class="navbar-item">
+                  Equipo
+                </a>
+              </div>
+            </div>
+            <a href="#proposito" class="navbar-item">
+              Propósito
             </a>
-            <a href="/iniciativas" class="navbar-item">
+            <a href="#iniciativas" class="navbar-item">
               Iniciativas
             </a>
-            <a href="/proposito" class="navbar-item">
-              Propósito
+            <a href="#impacto" class="navbar-item">
+              Impacto
+            </a>
+            <a href="#contacto" class="navbar-item">
+              Contacto
             </a>
           </div>
         </div>
@@ -70,7 +82,6 @@
           <source src="/assets/videobg.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-        
         <div class="hero-body">
           <div class="container has-text-centered">
             <h1 class="title is-condensed is-1 is-700">Descubre nuestro impacto</h1>
@@ -78,7 +89,7 @@
           </div>
         </div>
       </section>
-      <div class="hero is-primary is-bold has-text-white">
+      <div id="quienes-somos" class="hero is-primary is-bold has-text-white">
         <div class="hero-body">
           <div class="container has-text-centered">
             <div class="columns is-centered">
@@ -91,9 +102,313 @@
           </div>
         </div>
       </div>
+      <section id="que-hacemos" class="section">
+        <div class="container">
+          <h3 class="title is-condensed has-text-primary is-3 mb-6 has-text-centered">Que hacemos</h3>
+          <div class="columns is-centered">
+            <div class="column is-8">
+              <div class="content">
+                <p class="has-text-centered">
+                  Creamos soluciones de impacto social, ecológico y económico junto con organizaciones y comunidades rurales de LATAM. 
+                </p>  
+                <p class="has-text-centered">
+                  Fomentamos el cuidado de la sociobiodiversidad y la regeneración a través de la bioeconomía, la inclusión digital y la transición climática en cada territorio conectando desafíos con soluciones y escala.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section id="equipo" class="section">
+        <div class="container">
+          <h3 class="title is-condensed has-text-primary is-3 mb-6 has-text-centered">Equipo</h3>
+          <div class="columns is-centered is-multiline is-mobile my-6">
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="https://media.licdn.com/dms/image/v2/C5603AQGVCnKAZQqLiQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517689708096?e=1730332800&v=beta&t=aP4pOH2htucgwBHzxEq0gHzKJTH6S8tt4CAzWt_JCp8" />
+              </figure>
+              <p class="has-text-primary is-condensed"><b>Juan Cruz Zorzoli</b></p>
+              <p class="is-condensed">Director Programático</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="/assets/team/martina.jpg" />
+              </figure>
+              <p class="has-text-primary is-condensed"><b>Martina Vismara</b></p>
+              <p class="is-condensed">Directora de Proyectos y Gestión del conocimiento</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="https://media.licdn.com/dms/image/v2/D4D03AQHatWIEHBkSnA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1706310613818?e=1730332800&v=beta&t=InARD5Axk-e78nvvPSCZ74JZwjv81Ljd632-vz0BOFE" />
+              </figure>
+              <p class="has-text-primary is-condensed"><b>Pablo Lequio</b></p>
+              <p class="is-condensed">Responsable Gestión Operativa</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="https://media.licdn.com/dms/image/v2/D4D03AQHWNhGtfOzzDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724335715942?e=1730332800&v=beta&t=TJ86gV7oZiMsBDYnIBrApNHs8ua5Mf4wJAClaKXyCR4" />
+              </figure>
+              <p class="has-text-primary is-condensed"><b>Manuel Pedroso</b></p>
+              <p class="is-condensed">Asistente Administrativo</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="/assets/team/salvo.jpg" />
+              </figure>
+              <p class="has-text-primary is-condensed"><b>Sergio Salvo</b></p>
+              <p class="is-condensed">Área Administración</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="/assets/team/paez.jpg" />
+              </figure>
+              <p class="has-text-primary is-condensed"><b>Valentina Paez</b></p>
+              <p class="is-condensed">Asistente Comunicación</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="/assets/team/píca.jpg" />
+              </figure>
+              <p class="has-text-primary is-condensed"><b>Mariano Píca</b></p>
+              <p class="is-condensed">Asesor Operaciones</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="/assets/team/osiris.jpg" />
+              </figure>
+              <p class="has-text-primary is-condensed"><b>Osiris Chávez</b></p>
+              <p class="is-condensed">Coordinador Territorial</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="https://media.licdn.com/dms/image/v2/C5603AQFxo8PbPBm3ZA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516349458133?e=1730332800&v=beta&t=BYfzmJkW4oJRi013eWvc0c86XQXT5TfwteXMPgQJxV8" />
+              </figure>
+              <p class="has-text-primary is-condensed"><b>Hernán Gargiulo</b></p>
+              <p class="is-condensed">Asesor Legal</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="/assets/team/default.jpg" />
+              </figure>
+              <p class="has-text-primary is-condensed"><b>Mario Nocyze</b></p>
+              <p class="is-condensed">Asesor Contable</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="/assets/team/default.jpg" />
+              </figure>
+              <p class="has-text-primary is-condensed"><b>Edgardo Grunfeld</b></p>
+              <p class="is-condensed">Asesor Territorial</p>
+            </div>
+          </div>
+          <h3 class="subtitle is-condensed has-text-primary is-3 mb-6 has-text-centered">Consejo Directivo</h3>
+          <div class="columns is-centered is-multiline is-mobile my-6">
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="https://media.licdn.com/dms/image/v2/D4D03AQFnDyolEnlNZw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1669144979201?e=1730332800&v=beta&t=YbTcpYg0Md6fwH28LlXek-4v1zA1OW99eQti3QkpkAk" />
+              </figure>
+              <p class="has-text-primary is-condensed">Gabriela Sbarra</p>
+              <p class="is-condensed">Presidente</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="https://media.licdn.com/dms/image/v2/C5103AQEpmPHc3uVKZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516572876050?e=1730332800&v=beta&t=0DD0bTAW6lUlK1gmOKFvHJV4-4wo1rqbFEbfTGm7Gwk" />
+              </figure>
+              <p class="has-text-primary is-condensed">Pedro Vallari</p>
+              <p class="is-condensed">Tesorero</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="/assets/team/saieva.jpg" />
+              </figure>
+              <p class="has-text-primary is-condensed">Marina Saieva</p>
+              <p class="is-condensed">Secretaria</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="/assets/team/sabate.jpg" />
+              </figure>
+              <p class="has-text-primary is-condensed">Felix Sabate</p>
+              <p class="is-condensed">Vocal</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="/assets/team/juan.jpg" />
+              </figure>
+              <p class="has-text-primary is-condensed">Juan Mallea</p>
+              <p class="is-condensed">Revisor de cuentas</p>
+            </div>
+          </div>
+          <h3 class="subtitle is-condensed has-text-primary is-3 mb-6 has-text-centered">Asesores Consultivos</h3>
+          <div class="columns is-centered is-multiline is-mobile my-6">
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="/assets/team/team4.jpg" />
+              </figure>
+              <p class="has-text-primary is-condensed">Mauricio Moresco</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="https://media.licdn.com/dms/image/v2/C5603AQGac9Ns3ML79w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517428153183?e=1730332800&v=beta&t=Bfj3escsijBcYLCIo464sOZgUmzBz4XZA3LL6djpRNM" />
+              </figure>
+              <p class="has-text-primary is-condensed">Carlos March</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="/assets/team/frieder.jpg" />
+              </figure>
+              <p class="has-text-primary is-condensed">Daniel Levin Frieder</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="https://media.licdn.com/dms/image/v2/D4E03AQFieF07uF20vQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1690570260929?e=1730332800&v=beta&t=Vpu5eapLBjpDuL4j1Cs4zDANaHir6cuH76MW3GPBNbA" />
+              </figure>
+              <p class="has-text-primary is-condensed">Milagros Menna</p>
+            </div>
+            <div class="column is-2-desktop is-4-tablet is-6-mobile has-text-centered">
+              <figure class="image is-128x128 mx-auto mb-3">
+                <img class="is-rounded" src="/assets/team/bacalini.jpg" />
+              </figure>
+              <p class="has-text-primary is-condensed">Sol Bacalini</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="proposito"></div>
+      <div id="proposito-hero" class="hero is-primary is-medium">
+        <div class="hero-body">
+          <div class="py-6 my-6"></div>
+        </div>
+      </div>
+      <section class="section pt-0" style="margin-top: -100px">
+        <div class="container has-background-white px-5 py-6">
+          <div class="columns is-centered">
+            <div class="column is-8 has-text-centered">
+              <h3 class="title is-condensed is-3 has-text-primary is-700">Nuestro Propósito</h3>
+              <p>En Fibo, estamos comprometidos con la regeneración de la sociobiodiversidad y la promoción de la inclusión en todos los niveles. Con más de 20 años de experiencia, trabajamos junto a organizaciones y comunidades locales para desarrollar soluciones que respondan a los retos sociales y ambientales más urgentes. Nos enfocamos en generar cambios reales y sostenibles, alineando nuestras acciones con las necesidades del territorio. 
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="iniciativas" class="hero is-primary">
+        <div class="hero-body">
+          <div class="py-6"></div>
+        </div>
+      </div>
+      <section class="section pt-0" style="margin-top: -100px">
+        <div class="container has-background-white px-5 py-6">
+          <div class="columns is-centered">
+            <div class="column is-8 has-text-centered">
+              <h3 class="title is-condensed is-3 has-text-primary is-700">Iniciativas</h3>
+              <p>En Fibo, estamos comprometidos con la regeneración de la sociobiodiversidad y la promoción de la inclusión en todos los niveles. Con más de 20 años de experiencia, trabajamos junto a organizaciones y comunidades locales para desarrollar soluciones que respondan a los retos sociales y ambientales más urgentes. Nos enfocamos en generar cambios reales y sostenibles, alineando nuestras acciones con las necesidades del territorio. 
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section">
         <div class="container">
-          <h3 class="title is-condensed has-text-primary is-size-1-desktop is-size-3-tablet is-size-4-mobile mb-6 has-text-centered">+30.000 familias rurales alcanzadas</h3>
+
+        <div class="columns is-centered is-multiline">
+          <div class="column is-4-desktop is-6-tablet is-12-mobile has-text-centered">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="https://bulma.io/assets/images/placeholders/1280x960.png"
+                    alt="Bioeconomía"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <h1 class="title is-4 has-text-primary">Bioeconomía</h1>
+                <div class="content">
+                  <p>Impulsamos un modelo de desarrollo económico sostenible basado en la utilización, conservación y regeneración de recursos integrando inteligencia ancestral, tecnología e innovación. Fomentamos la producción y creación de valor respetando la sociobiodiversidad de los territorios con el fin de contribuir a la mejora de comunidades locales. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4-desktop is-6-tablet is-12-mobile has-text-centered">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="https://bulma.io/assets/images/placeholders/1280x960.png"
+                    alt="Bioeconomía"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <h1 class="title is-4 has-text-primary">Regeneración</h1>
+                <div class="content">
+                  <p>Co-creamos soluciones regenerativas junto a comunidades locales, enfocándonos en la restauración de suelos, la biodiversidad; la inclusión social y económica. Implementamos prácticas de agricultura sostenible, agrofloresta y reforestación, contribuyendo a la resiliencia ambiental y al bienestar socioeconómico de los territorios.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4-desktop is-6-tablet is-12-mobile has-text-centered">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="https://bulma.io/assets/images/placeholders/1280x960.png"
+                    alt="Bioeconomía"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <h1 class="title is-4 has-text-primary">Turismo Sostenible</h1>
+                <div class="content">
+                  <p>Desarrollamos rutas de ecoturismo comunitario que valoran el patrimonio cultural y natural de los pueblos originarios. A través del turismo sostenible, apoyamos el desarrollo económico local y la preservación de la identidad cultural, fomentando un modelo de encuentro entre visitantes y receptores que respeta y revitaliza los entornos naturales.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4-desktop is-6-tablet is-12-mobile has-text-centered">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="https://bulma.io/assets/images/placeholders/1280x960.png"
+                    alt="Bioeconomía"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <h1 class="title is-4 has-text-primary">Inclusión Digital</h1>
+                <div class="content">
+                  <p>Impulsamos la democratizamos el acceso al comercio digital para pequeños productores y artesanos en zonas rurales. Facilitamos su integración en plataformas digitales, aumentando sus oportunidades de mercado, posicionamiento y visibilidad y mejorando sus capacidades para competir en la economía nacional, reduciendo así la brecha digital.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4-desktop is-6-tablet is-12-mobile has-text-centered">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="https://bulma.io/assets/images/placeholders/1280x960.png"
+                    alt="Bioeconomía"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <h1 class="title is-4 has-text-primary">Biomas</h1>
+                <div class="content">
+                  <p>Acompañamos la visión del cuidado del planeta centrada tanto en la mitigación y adaptación de los  impactos ambientales como en la creación de las condiciones adecuadas para la vida humana con el menor impacto en el hábitat.  Desde ese enfoque promovemos el cuidado basado en regeneración de  Biomas icónicos de Latinoamérica juntos a poblaciones locales y miles de familias rurales​​​​​.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <hr>
+      <section class="section">
+        <div class="container">
+          <h3 class="title is-condensed is-3 has-text-primary has-text-centered mb-6 is-700">Impacto</h3>
+
+          <h3 class="title has-text-primary is-size-1-desktop is-size-3-tablet is-size-4-mobile mb-6 has-text-centered">+30.000 familias rurales alcanzadas</h3>
 
           <nav class="level is-mobile is-align-items-flex-start">
             <div class="level-item has-text-left">
@@ -121,39 +436,50 @@
       <section class="section">
         <div class="container">
           <h3 class="title is-condensed has-text-primary is-3 mb-6 has-text-centered">Alianzas</h3>
+          <div class="columns is-centered mb-6">
+            <div class="column is-6">
+              <p class="has-text-centered">
+                Nuestras alianzas son fundamentales para apalancar los proyectos e iniciativas que nacen desde los territorios y las organizaciones con las que colaboramos, a partir de la cooperación y la articulación se crean nuevas estrategias para alcanzar, cada día, un mayor impacto y que sean sostenibles, escalables y alineadas con las necesidades y oportunidades de los territorios.
+              </p>
+            </div>
+          </div>
           <div class="columns is-centered">
-            <div class="column is-8">
+            <div class="column is-9">
+             
               <div class="columns is-multiline is-centered is-vcentered is-mobile">
-                <div class="column is-6-mobile is-4-tablet is-3-desktop">
+                <div class="column is-6-mobile is-4-tablet is-2-desktop">
                   <img src="/assets/logos/ml.png" class="image mx-auto" alt="">
                 </div>
-                <div class="column is-6-mobile is-4-tablet is-3-desktop">
+                <div class="column is-6-mobile is-4-tablet is-2-desktop">
                   <img src="/assets/logos/clac.png" class="image mx-auto" alt="">
                 </div>
-                <div class="column is-6-mobile is-4-tablet is-3-desktop">
+                <div class="column is-6-mobile is-4-tablet is-2-desktop">
                   <img src="/assets/logos/bb.png" class="image mx-auto" alt="">
                 </div>
-                <div class="column is-6-mobile is-4-tablet is-3-desktop">
+                <div class="column is-6-mobile is-4-tablet is-2-desktop">
                   <img src="/assets/logos/ch.png" class="image mx-auto" alt="">
                 </div>
-                <div class="column is-6-mobile is-4-tablet is-3-desktop">
+                <div class="column is-6-mobile is-4-tablet is-2-desktop">
                   <img src="/assets/logos/avina.png" class="image mx-auto" alt="">
                 </div>
-                <div class="column is-6-mobile is-4-tablet is-3-desktop">
+                <div class="column is-6-mobile is-4-tablet is-2-desktop">
                   <img src="/assets/logos/inta.png" class="image mx-auto" alt="">
                 </div>
-                <div class="column is-6-mobile is-4-tablet is-3-desktop">
+                <div class="column is-6-mobile is-4-tablet is-2-desktop">
                   <img src="/assets/logos/cj.jpg" class="image mx-auto" alt="">
                 </div>
-                <div class="column is-6-mobile is-4-tablet is-3-desktop">
+                <div class="column is-6-mobile is-4-tablet is-2-desktop">
                   <img src="/assets/logos/der.png" class="image mx-auto" alt="">
+                </div>
+                <div class="column is-6-mobile is-4-tablet is-2-desktop">
+                  <img src="/assets/logos/acdi.svg" class="image mx-auto" alt="">
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="footer p-0">
+      <div id="contacto" class="footer p-0">
         <div class="columns">
           <div class="column is-9 has-background-primary">
             <div class="p-6 has-text-white mb-6">
@@ -170,16 +496,16 @@
               </div>
               <hr>
               <h3 class="subtitle is-condensed is-3 has-text-white">oficina@fibo.lat</h3>
-              <p class="is-size-4">
-                <a class="has-text-white"><i class="fab fa-fw fa-facebook"></i></a>&nbsp;
-                <a class="has-text-white"><i class="fab fa-fw fa-youtube"></i></a>&nbsp;
-                <a class="has-text-white"><i class="fab fa-fw fa-linkedin"></i></a>
+              <p class="is-size-2">
+                <a href="https://www.linkedin.com/company/fibo-social-impact/?viewAsMember=true" target="_blank" class="has-text-white"><i class="fab fa-fw fa-linkedin"></i></a>&nbsp;
+                <a href="https://www.facebook.com/Fibo.lat" target="_blank" class="has-text-white"><i class="fab fa-fw fa-facebook"></i></a>
+                <a href="https://www.instagram.com/fibo.lat/" target="_blank" class="has-text-white"><i class="fab fa-fw fa-instagram"></i></a>&nbsp;
               </p>
             </div>
             
           </div>
-          <div class="column is-3 has-background-dark">
-
+          <div class="column is-3 has-background-dark is-align-content-center">
+            <img src="/assets/isologo.png" class="image mx-auto my-4" width="100" alt="">
           </div>
         </div>
       </div>
