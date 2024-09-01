@@ -38,7 +38,7 @@
     }
   }
   #proposito-hero{
-    background: url("/assets/img/01.jpg");
+    background: url("/assets/img/03.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -50,5 +50,16 @@
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+  }
+
+  .with-background-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .animatex{
+    // if this class is present, hide the object
+    opacity: 0;
   }
 }
