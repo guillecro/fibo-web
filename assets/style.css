@@ -21554,7 +21554,7 @@ has-background-danger.is-hoverable:active {
 }
 
 .navbar {
-  --bulma-navbar-item-img-max-height: 6rem;
+  --bulma-navbar-item-img-max-height: 4.5rem;
 }
 
 .is-100 {
